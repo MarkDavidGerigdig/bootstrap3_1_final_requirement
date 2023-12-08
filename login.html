@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+  <div class="container mt-3" id="containerLogin">
+    <h1>RBK BIKE SHOP</h1>
+    <label><h3>Login</h3></label>
+    <div class="form-floating mb-3">
+      <input
+        type="email"
+        class="form-control"
+        id="txtLoginEmail"
+        placeholder="name@example.com"
+      />
+      <label for="txtLoginEmail">Email address</label>
+    </div>
+    <div class="form-floating">
+      <input
+        type="password"
+        class="form-control"
+        id="txtLoginPassword"
+        placeholder="Password"
+      />
+      <label for="txtLoginPassword">Password</label>
+    </div>
+    <button id="btnLogin" type="button" class="btn btn-outline-primary mt-1">
+      Login
+    </button>
+    <a
+      type="button"
+      class="btn btn-outline-success mt-1"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+      href="index.html"
+    >
+      Register
+    </a>
+    <div>
+    <a href="#" class="text-decoration-underline">Forgot password?</a></div>
+    <div>
+    <a href="index_guest.html" class="text-decoration-underline">Login as guest</a></div>
+
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+      data-bs-backdrop="static"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Create account</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="txtRegisterEmail"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="txtRegisterName"
+                placeholder="Name"
+              />
+              <label for="floatingInput">Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="password"
+                class="form-control"
+                id="txtRegisterPassword"
+                placeholder="Password"
+              />
+              <label for="floatingPassword">Password</label>
+            </div>
+            <div class="form-floating">
+              <input
+                type="password"
+                class="form-control"
+                id="txtRegisterConfirmPassword"
+                placeholder="Password"
+              />
+              <label for="floatingPassword">Confirm Password</label>
+            </div>
+            <div class="container mt-3">
+              <div class="mt-2 row">
+                <label for="radioGender">Gender</label>
+                <div class="form-check col-4">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="radioGender"
+                    id="flexRadioDefault0"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexRadioDefault0">
+                    Rather not say
+                  </label>
+                </div>
+                <div class="form-check col-4">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="radioGender"
+                    id="flexRadioDefault1"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Male
+                  </label>
+                </div>
+                <div class="form-check col-4">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="radioGender"
+                    id="flexRadioDefault2"
+                  />
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Female
+                  </label>
+                  
+              </div>
+              <div class="form-check col-4">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="radioGender"
+                  id="flexRadioDefault2"
+                />
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Furry
+                </label>
+                
+            </div>
+            </div>
+            <div class="mt-3">
+              <div class="form-floating">
+                <select
+                  id="selectRegisterYearLevel"
+                  class="form-select"
+                  aria-label="Default select example"
+                >
+                  <option selected>Select year level...</option>
+                  <option value="1">1st Year</option>
+                  <option value="2">2nd Year</option>
+                  <option value="3">3rd Year</option>
+                  <option value="4">4th Year</option>
+                </select>
+                <label for="floatingSelect">Year Level</label>
+              </div>
+            </div>
+            <div class="mt-3">
+              <div class="input-group">
+                <span class="input-group-text">Address</span>
+                <textarea
+                  id="txtRegisterAddress"
+                  class="form-control"
+                  aria-label="With textarea"
+                ></textarea>
+              </div>
+            </div>
+            <div class="mt-3">
+              <div class="form-floating mb-3">
+                <input
+                  type="date"
+                  class="form-control"
+                  id="txtRegisterBirthdate"
+                  placeholder="Birthdate"
+                />
+                <label for="floatingDate">Birthdate</label>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              id="btnModalRegisterClose"
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button id="btnRegister" type="button" class="btn btn-success">
+              Register
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+
+// HTML, Javascript, Bootstrap, CSS, jQuery
+
+/*
+let name = "Raniel"; // string || 'Raniel'
+let age = 18; // number
+let isPogi = true; // boolean
+let hobbies = ["Manood ng Netflix", "Maglaro ng video games"]; // object
+let user = {
+  name: "Raniel",
+  age: 18,
+  isPogi: true,
+  hobbies: ["Manood ng Netflix", "Maglaro ng video games"],
+}; // JSON object || JavaScript Object Notation
+
+console.log(user.isPogi, user["isPogi"]);
+*/
+
+let btnRegister = document.querySelector("#btnRegister"); // getElementById
+// let btnRegister = document.querySelector(".btn-primary"); // getElementByClassName
+// let btnRegister = document.querySelector("button div p");
+let btnLogin = document.querySelector("#btnLogin"); // getElementById
+btnRegister.onclick = () => {
+  console.log("btnRegister is clicked.");
+  let email = document.querySelector("#txtRegisterEmail").value,
+    name = document.querySelector("#txtRegisterName").value,
+    password = document.querySelector("#txtRegisterPassword").value,
+    confirmPassword = document.querySelector(
+      "#txtRegisterConfirmPassword"
+    ).value;
+
+  register(email, name, password, confirmPassword);
+};
+
+btnLogin.onclick = function () {
+  console.log("btnLogin has been clicked.");
+
+  let email = document.querySelector("#txtLoginEmail").value;
+  let password = document.querySelector("#txtLoginPassword").value;
+  login(email, password);
+};
+
+function register(email, name, password, confirmPassword) {
+  if (!email) return alert(`Email is required.`);
+  else if (!name) return alert(`Name is required`);
+  else if (!password || !confirmPassword) return alert(`Password is required.`);
+  else if (password != confirmPassword)
+    return alert(`Password does not match.`);
+
+  let userToCreate = {
+    email,
+    name,
+    password,
+  };
+
+  let users = localStorage.getItem("users");
+  if (!users) {
+    users = [userToCreate]; // First user na mareregister
+  } else {
+    users = JSON.parse(users);
+    users.push(userToCreate);
+  }
+
+  // Success validation
+  localStorage.setItem("users", JSON.stringify(users));
+  alert(`User ${userToCreate.name} has been successfully created.`); // alert("User " + userToCreate.name + " has been successfully created.");
+}
+
+function login(email, password) {
+  let users = localStorage.getItem("users");
+  if (!users) {
+    return alert(`Email or password is invalid.`);
+  }
+
+  users = JSON.parse(users);
+  let userIndex = users.findIndex((u) => {
+    return u.email == email && u.password == password;
+  });
+
+  if (userIndex == -1) return alert(`Email or password is invalid.`);
+
+  // Success validation
+  window.location.href="index.html";
+
+  }
+    
+  
+
+</script>
